@@ -9,8 +9,15 @@ function getFruits () {
   return Promise.resolve(fruits)
 }
 
-let image = '/f92793b692b45c6881ef43caafb1c7c4.jpg '
+let images = [
+  '/images/posters/angela.jpg', 
+  '/images/posters/pinkfloyd.jpg', 
+  '/images/posters/Maori_Chief.jpg',
+  '/images/posters/psychadelic.jpg',
+  '/images/posters/ledzeppelin.jpg'
+]
 
 function getImage(){
-  return Promise.resolve(image)
+  return Promise.resolve(images[Math.floor(Math.random() * images.length)]) 
+  //
 }

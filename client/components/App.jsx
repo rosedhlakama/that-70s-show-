@@ -17,12 +17,13 @@ class App extends React.Component {
   render () {
     return (
       <div className='app'>
-        <h1>Fullstack Boilerplate</h1>
-        <ul>
-          {this.state.fruits.map(fruit => (
-            <li key={fruit}>{fruit}</li>
-          ))}
-        </ul>
+        <div id="screen"></div>
+        <div id="buttons">
+          <button type="submit" name="button" value="1">1</button>
+          <button type="submit" name="button" value="2">2</button>
+          <button type="submit" name="button" value="3">3</button>
+          <button type="submit" name="button" value="4">4</button>
+        </div>
       </div>
     )
   }

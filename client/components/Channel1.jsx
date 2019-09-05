@@ -2,7 +2,7 @@ import React from 'react'
 
 const ButtonOne = () => {
     return (
-        <div id="display">
+        <div id="channel-one">
             Button 1 \o/
         </div>
     )

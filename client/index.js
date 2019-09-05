@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './components/App'
+import TV from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <App />,
-    document.getElementById('app'))
+    <TV />,
+    document.getElementById('tv'))
 })

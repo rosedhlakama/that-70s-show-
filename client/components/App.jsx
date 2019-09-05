@@ -1,32 +1,56 @@
 import React from 'react'
 
-import { getFruits } from '../apiClient'
+// import { getFruits } from '../apiClient'
 
-class App extends React.Component {
-  state = {
-    fruits: []
-  }
+import ChannelZero from "./Channel0"
+import ChannelOne from "./Channel1"
+import ChannelTwo from "./Channel2"
+import ChannelThree from "./Channel3"
+import ChannelFour from "./Channel4"
 
-  componentDidMount () {
-    getFruits()
-      .then(fruits => {
-        this.setState({fruits})
-      })
+
+class TV extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      channel: 0
+    }
+}
+
+//  componentDidMount () {
+//     getFruits()
+//       .then(fruits => {
+//         this.setState({fruits})
+//       })
+//   } 
+
+  selectComponent = () => {
+    this.setState({
+      channel: event.target.value
+    })
   }
 
   render () {
     return (
-      <div className='app'>
-        <div id="screen"></div>
-        <div id="buttons">
-          <button type="submit" name="button" value="1">1</button>
-          <button type="submit" name="button" value="2">2</button>
-          <button type="submit" name="button" value="3">3</button>
-          <button type="submit" name="button" value="4">4</button>
+      <div className='tv'>
+        <div id="screen">
+          {this.state.channel == 0 && <ChannelZero />}
+          {this.state.channel == 1 && <ChannelOne />}
+          {this.state.channel == 2 && <ChannelTwo />}
+          {this.state.channel == 3 && <ChannelThree />}
+          {this.state.channel == 4 && <ChannelFour />}
         </div>
+        <div id="buttons">
+          <input type="radio" name="button" value="1" onClick={this.selectComponent} />
+          <input type="radio" name="button" value="2" onClick={this.selectComponent} />
+          <input type="radio" name="button" value="3" onClick={this.selectComponent} />
+          <input type="radio" name="button" value="4" onClick={this.selectComponent} />
+        </div>
+
+        
       </div>
     )
   }
 }
 
-export default App
+export default TV

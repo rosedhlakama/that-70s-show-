@@ -24,7 +24,7 @@ class TV extends React.Component {
 //       })
 //   } 
 
-  selectComponent = () => {
+  selectComponent = (event) => {
     this.setState({
       channel: event.target.value
     })

@@ -10,11 +10,12 @@ function getFruits () {
 }
 
 let images = [
-  '/images/posters/angela.jpg', 
   '/images/posters/pinkfloyd.jpg', 
   '/images/posters/Maori_Chief.jpg',
   '/images/posters/psychadelic.jpg',
-  '/images/posters/ledzeppelin.jpg'
+  '/images/posters/ledzeppelin.jpg',
+  '/images/posters/superfly.jpg',
+  '/images/posters/angela.jpg', 
 ]
 
 function getImage(){

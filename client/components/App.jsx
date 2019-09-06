@@ -45,10 +45,10 @@ class TV extends React.Component {
         <div id="buttons">
           <h3>TV Channels</h3>
           <div id="channels">
-          <input type="radio" name="button" value="1" onClick={this.selectComponent} />
-          <input type="radio" name="button" value="2" onClick={this.selectComponent} />
-          <input type="radio" name="button" value="3" onClick={this.selectComponent} />
-          <input type="radio" name="button" value="4" onClick={this.selectComponent} />
+          <input id='button1' type="radio" name="button" value="1" onClick={this.selectComponent} />
+          <input id='button2' type="radio" name="button" value="2" onClick={this.selectComponent} />
+          <input id='button3' type="radio" name="button" value="3" onClick={this.selectComponent} />
+          <input id='button4' type="radio" name="button" value="4" onClick={this.selectComponent} />
           </div>
           <div id="on-off">
             <button id="on-off-button"></button>

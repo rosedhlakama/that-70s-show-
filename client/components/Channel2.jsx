@@ -20,7 +20,7 @@ class ButtonTwo extends React.Component {
     render() {
         return (
             <div>
-                <img className='angela' src={this.state.image} />
+                <img src={this.state.image} height='70%' width='80%'/>
             </div>
 
         )

@@ -9,6 +9,7 @@ import ChannelThree from "./Channel3"
 import ChannelFour from "./Channel4"
 
 
+
 class TV extends React.Component {
   constructor (props) {
     super(props)
@@ -39,20 +40,20 @@ class TV extends React.Component {
           {this.state.channel == 2 && <ChannelTwo />}
           {this.state.channel == 3 && <ChannelThree />}
           {this.state.channel == 4 && <ChannelFour />}
+
         </div>
         <div id="buttons">
+          <h3>TV Channels</h3>
           <div id="channels">
-          <input type="radio" name="button" value="1" onClick={this.selectComponent} />
-          <input type="radio" name="button" value="2" onClick={this.selectComponent} />
-          <input type="radio" name="button" value="3" onClick={this.selectComponent} />
-          <input type="radio" name="button" value="4" onClick={this.selectComponent} />
+          <input id='button1' type="radio" name="button" value="1" onClick={this.selectComponent} />
+          <input id='button2' type="radio" name="button" value="2" onClick={this.selectComponent} />
+          <input id='button3' type="radio" name="button" value="3" onClick={this.selectComponent} />
+          <input id='button4' type="radio" name="button" value="4" onClick={this.selectComponent} />
           </div>
           <div id="on-off">
-            <button id="on-off-button"></button>
+            {/* <button id="on-off-button"></button> */}
           </div>
         </div>
-
-        
       </React.Fragment>
     )
   }

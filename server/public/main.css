@@ -3,54 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 #tv {
-    min-height: 100vh;
-    background-color: bisque;
-    display: flex;
+  min-height: 100vh;
+  background-color: bisque;
+  display: flex;
 }
 
 #screen {
@@ -59,28 +140,132 @@ table {
     margin: 5%;
     flex-basis: auto;
     border-radius: 10%;
-    background-color: black;
+    background-color: rgb(54, 54, 54);
     overflow: hidden;
 }
 
+#screen img {
+  width: 100%;
+}
+
+.angela img {
+ height: 100%;
+}
+
 #buttons {
-    width: 15%;
-    margin:5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  width: 15%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 
 #channels {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
-
-
 
 #on-off {
-    margin: auto 5%;
+  margin: auto 5%;
 }
+
+h3 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/*------------------
+ CHANNEL - 1 
+------------------ */
+
+
+#channel-one {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+@keyframes slither6 {
+    0% {transform: translateX(-6%);}
+    100% {transform: translateX(6%);}
+  }
+  @keyframes slither12 {
+    0% {transform: translateX(-12%);}
+    100% {transform: translateX(12%);}
+  }
+  @keyframes slither15 {
+    0% {transform: translateX(-15%);}
+    100% {transform: translateX(15%);}
+  }
+  @keyframes slither24 {
+    0% {transform: translateX(-24%);}
+    100% {transform: translateX(24%);}
+  }
+  @keyframes slither40 {
+    0% {transform: translateX(-40%);}
+    100% {transform: translateX(40%);}
+  }
+  
+  .circle {
+    border-radius: 50%;
+    display: flex;
+    margin: calc(100vw/11);
+  }
+  .circle > .circle {
+    transform: translateX(-6%);
+    animation: slither6 1.5s 2.5s infinite alternate ease-in-out;
+  }
+  .circle > .circle > .circle {
+    transform: translateX(-12%);
+    animation: slither12 1.5s 2s infinite alternate ease-in-out;
+  }
+  .circle > .circle > .circle > .circle {
+    transform: translateX(-15%);
+    animation: slither15 1.5s 1.5s infinite alternate ease-in-out;
+  }
+  .circle > .circle > .circle > .circle > .circle {
+    transform: translateX(-24%);
+    animation: slither24 1.5s 1s infinite alternate ease-in-out;
+  }
+  .circle > .circle > .circle > .circle > .circle > .circle {
+    transform: translateX(-40%);
+    animation: slither40 1.5s .5s infinite alternate ease-in-out;
+  }
+  .circle > .circle > .circle > .circle > .circle > .circle > .circle {
+    /* This one doesn't get shown. */
+  }
+  .black {
+    background-color: black; 
+  }
+
+  .yellow {
+    background-color: rgb(236, 169, 45); 
+  }
+
+  .orange {
+    background-color: rgb(241, 131, 41); 
+  }
+
+  .dark-orange {
+    background-color: rgb(190, 68, 11); 
+  }
+
+  .red {
+    background-color: rgba(182, 34, 8, 0.918); 
+  }
+
+  .dark-red {
+    background-color: rgba(104, 19, 4, 0.918); 
+  }
+  
+
+
 /*------------------
  CHANNEL - 3 
 ------------------ */
@@ -100,7 +285,7 @@ table {
   height: 250px;
   border-radius: 50%;
   background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-  animation: animate  1s linear infinite;
+  animation: animate 1s linear infinite;
 }
 
 @keyframes animate {
@@ -118,7 +303,7 @@ table {
   height: 100%;
   border-radius: 50%;
   background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-  animation: animate  1s linear infinite;
+  animation: animate 1s linear infinite;
 }
 
 .loader span:nth-child(1) {
@@ -138,7 +323,7 @@ table {
 }
 
 .loader:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   left: 10px;
@@ -149,7 +334,7 @@ table {
 }
 
 /*------------------
- CHANNEL - 6 
+ CHANNEL - 5 
 ------------------ */
 
 /*------------------

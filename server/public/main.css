@@ -336,3 +336,51 @@ h3 {
 /*------------------
  CHANNEL - 5 
 ------------------ */
+
+/*------------------
+ CHANNEL - 4 
+------------------ */
+
+
+.btn1 {
+  background: #92c7eb; 
+  background-image: url("data:image/png;base64,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"); 
+  background-size: cover; 
+  background-position: center; 
+  display: inline-block; 
+  border: none; 
+  padding: 20px; 
+  width: 70px; 
+  border-radius: 900px; 
+  height: 70px; 
+  transition: all 0.5s; 
+  cursor: pointer;
+}
+
+.btn:hover{ 
+  width: 75px; 
+  height: 75px;
+}
+
+.btn2 {
+  background: black; 
+  background-image: url("https://www.seekpng.com/png/full/294-2944357_play-video-icon-pause-video-icon-pause-button.png"); 
+  background-size: cover; 
+  background-position: center; 
+  display: inline-block; 
+  border: none; 
+  padding: 20px; 
+  width: 70px; 
+  border-radius: 900px; 
+  height: 70px; 
+  transition: all 0.5s; 
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+}
+
+#musicButtons {
+  text-align: center;
+}

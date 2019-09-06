@@ -16,9 +16,10 @@ let images = [
   '/images/posters/ledzeppelin.jpg',
   '/images/posters/superfly.jpg',
   '/images/posters/angela.jpg', 
+  '/images/posters/jamesbrown.jpg',
+  '/images/posters/jimmyhendrix.jpg',
 ]
 
 function getImage(){
   return Promise.resolve(images[Math.floor(Math.random() * images.length)]) 
-  //
 }

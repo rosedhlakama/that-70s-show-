@@ -1,11 +1,16 @@
 import React from 'react'
 
 const ChannelThree = () => {
-    return (
-        <div id="channell-three">
-            Button 3 \o/
-        </div>
-    )
+  return (
+    <div id="channel-three">
+      <div className = "loader">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </div>
+  )
 }
 
 export default ChannelThree

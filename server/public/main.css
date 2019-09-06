@@ -60,6 +60,7 @@ table {
     flex-basis: auto;
     border-radius: 10%;
     background-color: black;
+    overflow: hidden;
 }
 
 #buttons {
@@ -149,29 +150,27 @@ table {
   .black {
     background-color: black; 
   }
-  .white {
-    background-color: white; 
-  }
 
-  .purple {
-    background-color: rgb(100, 12, 100); 
-  }
-
-  .blue {
-    background-color: rgb(27, 27, 173); 
-  }
-
-  .red {
-    background-color: rgba(214, 39, 8, 0.918); 
+  .yellow {
+    background-color: rgb(236, 169, 45); 
   }
 
   .orange {
-    background-color: rgb(255, 136, 0); 
+    background-color: rgb(241, 131, 41); 
   }
 
-  .yellow {
-    background-color: yellow; 
+  .dark-orange {
+    background-color: rgb(190, 68, 11); 
   }
+
+  .red {
+    background-color: rgba(182, 34, 8, 0.918); 
+  }
+
+  .dark-red {
+    background-color: rgba(104, 19, 4, 0.918); 
+  }
+  
 
 
 /*------------------

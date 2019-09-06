@@ -20,7 +20,6 @@ class ButtonTwo extends React.Component {
     render() {
         return (
             <div>
-                <h2>image should go here</h2>
                 <img className='angela' src={this.state.image} />
             </div>
 

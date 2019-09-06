@@ -32,7 +32,7 @@ class TV extends React.Component {
 
   render () {
     return (
-      <div className='tv'>
+      <React.Fragment>
         <div id="screen">
           {this.state.channel == 0 && <ChannelZero />}
           {this.state.channel == 1 && <ChannelOne />}
@@ -41,14 +41,19 @@ class TV extends React.Component {
           {this.state.channel == 4 && <ChannelFour />}
         </div>
         <div id="buttons">
+          <div id="channels">
           <input type="radio" name="button" value="1" onClick={this.selectComponent} />
           <input type="radio" name="button" value="2" onClick={this.selectComponent} />
           <input type="radio" name="button" value="3" onClick={this.selectComponent} />
           <input type="radio" name="button" value="4" onClick={this.selectComponent} />
+          </div>
+          <div id="on-off">
+            <button id="on-off-button"></button>
+          </div>
         </div>
 
         
-      </div>
+      </React.Fragment>
     )
   }
 }

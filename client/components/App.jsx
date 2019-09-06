@@ -51,7 +51,7 @@ class TV extends React.Component {
           <input id='button4' type="radio" name="button" value="4" onClick={this.selectComponent} />
           </div>
           <div id="on-off">
-            <button id="on-off-button"></button>
+            {/* <button id="on-off-button"></button> */}
           </div>
         </div>
       </React.Fragment>
